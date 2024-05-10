@@ -8,9 +8,15 @@ module.exports = {
     "prettier",
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
+
   parser: "@typescript-eslint/parser",
   plugins: ["react-refresh"],
   rules: {
+    "no-unused-vars": "error",
+    "no-unused-expressions": "error",
+    "prefer-const": "error",
+    "no-console": "warn",
+    "no-undef": "error",
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
