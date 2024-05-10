@@ -17,9 +17,9 @@ module.exports = {
     "prefer-const": "error",
     "no-console": "warn",
     "no-undef": "error",
-    "react-refresh/only-export-components": [
-      "warn",
-      { allowConstantExport: true },
-    ],
+    // "react-refresh/only-export-components": [
+    //   "warn",
+    //   { allowConstantExport: true },
+    // ],
   },
 };

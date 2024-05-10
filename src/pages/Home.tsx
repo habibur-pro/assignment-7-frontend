@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { useGetPostsQuery } from "../redux/api/api";
 import { increase } from "../redux/features/counterSlice";
 import { useAppDispatch, useAppSelector } from "../redux/hook";
@@ -14,7 +15,7 @@ const Home = () => {
     <div>
       <div>
         <p className="text-xl font-bold">{count}</p>
-        <button onClick={() => dispatch(increase())}>Increase</button>
+        <Button onClick={() => dispatch(increase())}>Increase</Button>
         {data.map((item: TItem) => (
           <p className="text-lg font-bold" key={item.id}>
             {item.title}
