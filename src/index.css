@@ -66,6 +66,12 @@
   }
 }
 
+@layer utilities {
+  .full-screen {
+    @apply h-[calc(100vh-64px)];
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -73,4 +79,10 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.banner {
+  background-image: url("./assets/images/banner.jpg");
+  background-repeat: "no-repeat";
+  background-size: cover;
 }
